@@ -26,5 +26,5 @@ $d1 = new Dog();
 
 
 $h1 -> sayHi();  // Method Property
-$c1-> sayHi();
+$c1-> sayHi(); // Method Property
 $d1-> sayHi();
