@@ -4,6 +4,8 @@ abstract class Shape{  // Force Using
   abstract function getArea(); // No body but might be implement in child class
   abstract function getPerimeter();
 
+  abstract function eat($v,$v1=0);
+
   function sayHi(){
     echo "hi";
   }
@@ -43,6 +45,10 @@ class Rectangle extends Shape{
     echo "Heee";
   }
 
+  function eat($a,$b){
+    echo "Eating"
+  }
+
 }
 
 
@@ -62,6 +68,10 @@ class Triangle extends Shape{
      
    }
 
+   function eat($a1,$b1){
+    echo "Eating Something"
+  }
+
 }
 
 
@@ -71,3 +81,4 @@ echo $rec->getArea();
 echo "<br>";
 $tri = new Triangle();
 $tri->sayHi();
+$tri->eat(1,2)
