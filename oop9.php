@@ -12,7 +12,7 @@ class Animal implements BaseAnimal{ // Class cann't extend interface only implem
 
    function isAlive(){}
    function canEat($param1, $param2){}
-   function breed(){}
+   function breed(){} 
 
 }
 
